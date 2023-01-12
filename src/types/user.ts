@@ -15,9 +15,9 @@ interface FetchUserAction {
 }
 interface FetchUserActionError {
     type: UserActionTypes.FETCH_USERS_ERROR;
-    payload: any[];
+    payload: string;
 }
 interface FetchUserActionSuccess {
     type: UserActionTypes.FETCH_USERS_SUCCESS;
-    payload: string;
+    payload: any[];
 }
