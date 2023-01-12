@@ -12,12 +12,12 @@ export const fetchUsers = () => {
                     type: UserActionTypes.FETCH_USERS_SUCCESS,
                     payload: response.data
                 })
-            }, 500)
+            }, 1000)
         } catch (e) {
             console.log(e)
             dispatch({
                 type: UserActionTypes.FETCH_USERS_ERROR,
-                payload: `Error of users loading.`
+                payload: `of users loading.`
             })
         }
     }
